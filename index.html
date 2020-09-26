@@ -3,12 +3,24 @@
     <head> 
         <meta charset="utf-8">
         <title>Tea Readings</title>
-        <meta name="description" content="tea readings around the world">
-        <meta name="author" content="Tea readings">
+        <meta name="description" content="Tea readings around the world">
+        <meta name="author" content="Tea Reading">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--P5-->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
+        <!--P5-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.dom.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+      
+        <!--Pate here-->
+       <!-- GG Bundled -->
+        <script src="https://cdn.jsdelivr.net/gh/generative-design/Code-Package-p5.js@master/libraries/gg-dep-bundle/gg-dep-bundle.js"></script>
+        <!-- Opentype -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/opentype.js/0.7.3/opentype.min.js"></script>
+        <!-- Rita -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rita/1.3.11/rita-small.min.js"></script>
+        
         <script src="js/tea.js"></script>
 
         <!--Styles-->
@@ -16,7 +28,6 @@
     </head>
     <body>
         <div class="map">
-            <!-- <img src="teamap.png" /> -->
             <div class="reveal"></div>
         </div>
         <div class="pin-container">
@@ -26,6 +37,7 @@
             <div class="pin pin-india"><span>India</span></div>
         </div>
         <div class="tea-container-modal">
+            <p class="welcome"></p>
             <button class="close">finish</button>
             <div id="p5-tea-box">
                 <!-- our tea reading p5 sketch will go here-->
